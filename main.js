@@ -1,6 +1,7 @@
 import "./style.css";
 import * as THREE from "three";
 import { NotEqualDepth } from "three";
+import bg from "./bg.jpg"
  
 //canvas
 const canvas = document.querySelector("#webgl");
@@ -10,7 +11,7 @@ const scene = new THREE.Scene();
 
 //背景用のテクスチャ
 const textureLoader = new THREE.TextureLoader();
-const bgTexture = textureLoader.load("bg.jpg");
+const bgTexture = textureLoader.load(bg);
 scene.background = bgTexture;
  
 //サイズ
